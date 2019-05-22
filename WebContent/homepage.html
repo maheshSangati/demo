@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>Practice Html</title>
+
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="#">Home</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+     <li><a href=""><span class="glyphicon glyphicon-off"></span> LogOut</a></li>
+      <li><a href=""><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    <li>
+ <div class="dropdown">
+  <button id="navbutton" class="btn btn-link dropdown-toggle navbar-btn" type="button" data-toggle="dropdown">
+  <span class="glyphicon glyphicon-option-vertical"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</div>
+	</li>
+    </ul>
+  </div>
+</nav>
+<h4>demo commit</h4>
+
+	<h4>Demo script</h4>
+	<p id="demo"></p>
+	<br>
+	<button type="button" onclick="myfunction()">click me</button>
+<script type="text/javascript">
+function myfunction() {
+	document.getElementById("demo").innerHTML="function working";
+};
+$("#navbutton").click(function(){
+	$(".dropdown-menu").fadeIn();
+});
+
+$(".dropdown-menu").mouseleave(function(){
+	$(".dropdown-menu").hide();
+});
+</script>	
+</body>
+</html>
